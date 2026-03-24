@@ -1,0 +1,5 @@
+test	status	details	trace
+create_file	FAIL	rc=0; answer=File created. Now answer CREATED.CREATED; command_exec=1	/tmp/codex-benchmark-gpt-oss-20b-demo/traces/create_file.jsonl
+edit_and_test	PASS	rc=0; answer=PASS; command_exec=5	/tmp/codex-benchmark-gpt-oss-20b-demo/traces/edit_and_test.jsonl
+shell_http	PASS	rc=0; answer=Non-interactive mode – Codex | OpenAI Developers; expected=Non-interactive mode – Codex | OpenAI Developers; command_exec=1; shell_http=yes	/tmp/codex-benchmark-gpt-oss-20b-demo/traces/shell_http.jsonl
+web_search_tool	FAIL	rc=0; answer=Non-Interactive | OpenAI Developers; expected=Non-interactive mode – Codex | OpenAI Developers; dedicated_web_search=no; shell_http=yes	/tmp/codex-benchmark-gpt-oss-20b-demo/traces/web_search_tool.jsonl

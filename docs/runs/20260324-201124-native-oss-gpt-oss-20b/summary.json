@@ -1,0 +1,41 @@
+{
+  "timestamp": "20260324-201124",
+  "mode": "native-oss",
+  "profile": "local_ollama_auto",
+  "model": "gpt-oss:20b",
+  "output_dir": "/tmp/codex-benchmark-gpt-oss-20b-demo",
+  "doc_url": "https://developers.openai.com/codex/noninteractive",
+  "tests": [
+    {
+      "test": "create_file",
+      "status": "FAIL",
+      "details": "rc=0; answer=File created. Now answer CREATED.CREATED; command_exec=1",
+      "trace": "/tmp/codex-benchmark-gpt-oss-20b-demo/traces/create_file.jsonl"
+    },
+    {
+      "test": "edit_and_test",
+      "status": "PASS",
+      "details": "rc=0; answer=PASS; command_exec=5",
+      "trace": "/tmp/codex-benchmark-gpt-oss-20b-demo/traces/edit_and_test.jsonl"
+    },
+    {
+      "test": "shell_http",
+      "status": "PASS",
+      "details": "rc=0; answer=Non-interactive mode \u2013 Codex | OpenAI Developers; expected=Non-interactive mode \u2013 Codex | OpenAI Developers; command_exec=1; shell_http=yes",
+      "trace": "/tmp/codex-benchmark-gpt-oss-20b-demo/traces/shell_http.jsonl"
+    },
+    {
+      "test": "web_search_tool",
+      "status": "FAIL",
+      "details": "rc=0; answer=Non-Interactive | OpenAI Developers; expected=Non-interactive mode \u2013 Codex | OpenAI Developers; dedicated_web_search=no; shell_http=yes",
+      "trace": "/tmp/codex-benchmark-gpt-oss-20b-demo/traces/web_search_tool.jsonl"
+    }
+  ],
+  "counts": {
+    "PASS": 2,
+    "PARTIAL": 0,
+    "FAIL": 2,
+    "TIMEOUT": 0
+  },
+  "score": 0.5
+}

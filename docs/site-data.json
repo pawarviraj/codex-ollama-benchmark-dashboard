@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-03-24T15:24:49.352196+00:00",
+  "site": {
+    "site_name": "Ollama Codex Benchmark",
+    "site_tagline": "Automated local-model compatibility reports for Codex and Ollama",
+    "site_description": "Public benchmark reports comparing how well local Ollama models work with Codex for file creation, editing, terminal execution, test runs, shell-based web access, and dedicated web-search behavior.",
+    "site_url": "",
+    "repo_url": "",
+    "owner_name": "Pawar Viraj",
+    "owner_github": "",
+    "keywords": [
+      "ollama codex benchmark",
+      "codex ollama benchmark",
+      "local llm coding benchmark",
+      "gpt-oss benchmark",
+      "ollama coding benchmark",
+      "codex local development benchmark",
+      "ollama codex github pages"
+    ]
+  },
+  "runs": [
+    {
+      "run_id": "20260324-202749-native-oss-gpt-oss-20b",
+      "timestamp": "20260324-202749",
+      "timestamp_pretty": "Mar 24, 2026 at 20:27:49",
+      "timestamp_iso": "2026-03-24T20:27:49+00:00",
+      "mode": "native-oss",
+      "profile": "local_ollama_auto",
+      "model": "gpt-oss:20b",
+      "doc_url": "https://developers.openai.com/codex/noninteractive",
+      "source_run_dir": "/tmp/codex-benchmark-20260324-202749",
+      "archive_dir": "/home/pawarviraj/automated_development/codex-benchmark-dashboard/docs/runs/20260324-202749-native-oss-gpt-oss-20b",
+      "counts": {
+        "PASS": 3,
+        "PARTIAL": 0,
+        "FAIL": 0,
+        "TIMEOUT": 1
+      },
+      "tests": [
+        {
+          "test": "create_file",
+          "status": "PASS",
+          "details": "rc=0; answer=CREATED; command_exec=1",
+          "trace": "/tmp/codex-benchmark-20260324-202749/traces/create_file.jsonl"
+        },
+        {
+          "test": "edit_and_test",
+          "status": "PASS",
+          "details": "rc=0; answer=PASS; command_exec=4",
+          "trace": "/tmp/codex-benchmark-20260324-202749/traces/edit_and_test.jsonl"
+        },
+        {
+          "test": "shell_http",
+          "status": "PASS",
+          "details": "rc=0; answer=Non-interactive mode \u2013 Codex | OpenAI Developers; expected=Non-interactive mode \u2013 Codex | OpenAI Developers; command_exec=2; shell_http=yes",
+          "trace": "/tmp/codex-benchmark-20260324-202749/traces/shell_http.jsonl"
+        },
+        {
+          "test": "web_search_tool",
+          "status": "TIMEOUT",
+          "details": "rc=124; answer=; expected=Non-interactive mode \u2013 Codex | OpenAI Developers; dedicated_web_search=no; shell_http=yes",
+          "trace": "/tmp/codex-benchmark-20260324-202749/traces/web_search_tool.jsonl"
+        }
+      ],
+      "total_tests": 4,
+      "score": 0.75,
+      "summary_md": "summary.md",
+      "summary_tsv": "summary.tsv",
+      "summary_json": "summary.json"
+    },
+    {
+      "run_id": "20260324-201124-native-oss-gpt-oss-20b",
+      "timestamp": "20260324-201124",
+      "timestamp_pretty": "Mar 24, 2026 at 20:11:24",
+      "timestamp_iso": "2026-03-24T20:11:24+00:00",
+      "mode": "native-oss",
+      "profile": "local_ollama_auto",
+      "model": "gpt-oss:20b",
+      "doc_url": "https://developers.openai.com/codex/noninteractive",
+      "source_run_dir": "/tmp/codex-benchmark-gpt-oss-20b-demo",
+      "archive_dir": "/home/pawarviraj/automated_development/codex-benchmark-dashboard/docs/runs/20260324-201124-native-oss-gpt-oss-20b",
+      "counts": {
+        "PASS": 2,
+        "PARTIAL": 0,
+        "FAIL": 2,
+        "TIMEOUT": 0
+      },
+      "tests": [
+        {
+          "test": "create_file",
+          "status": "FAIL",
+          "details": "rc=0; answer=File created. Now answer CREATED.CREATED; command_exec=1",
+          "trace": "/tmp/codex-benchmark-gpt-oss-20b-demo/traces/create_file.jsonl"
+        },
+        {
+          "test": "edit_and_test",
+          "status": "PASS",
+          "details": "rc=0; answer=PASS; command_exec=5",
+          "trace": "/tmp/codex-benchmark-gpt-oss-20b-demo/traces/edit_and_test.jsonl"
+        },
+        {
+          "test": "shell_http",
+          "status": "PASS",
+          "details": "rc=0; answer=Non-interactive mode \u2013 Codex | OpenAI Developers; expected=Non-interactive mode \u2013 Codex | OpenAI Developers; command_exec=1; shell_http=yes",
+          "trace": "/tmp/codex-benchmark-gpt-oss-20b-demo/traces/shell_http.jsonl"
+        },
+        {
+          "test": "web_search_tool",
+          "status": "FAIL",
+          "details": "rc=0; answer=Non-Interactive | OpenAI Developers; expected=Non-interactive mode \u2013 Codex | OpenAI Developers; dedicated_web_search=no; shell_http=yes",
+          "trace": "/tmp/codex-benchmark-gpt-oss-20b-demo/traces/web_search_tool.jsonl"
+        }
+      ],
+      "total_tests": 4,
+      "score": 0.5,
+      "summary_md": "summary.md",
+      "summary_tsv": "summary.tsv",
+      "summary_json": "summary.json"
+    }
+  ]
+}

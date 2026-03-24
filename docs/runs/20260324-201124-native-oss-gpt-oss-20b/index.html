@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>gpt-oss:20b benchmark results | Ollama Codex Benchmark</title>
+  <meta name="description" content="Benchmark results for gpt-oss:20b with Codex and Ollama, including file-edit, shell, test, and web-search behavior from Mar 24, 2026 at 20:11:24.">
+  <meta name="keywords" content="ollama codex benchmark, codex ollama benchmark, local llm coding benchmark, gpt-oss benchmark, ollama coding benchmark, codex local development benchmark, ollama codex github pages">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="gpt-oss:20b benchmark results | Ollama Codex Benchmark">
+  <meta property="og:description" content="Benchmark results for gpt-oss:20b with Codex and Ollama, including file-edit, shell, test, and web-search behavior from Mar 24, 2026 at 20:11:24.">
+  <meta property="og:site_name" content="Ollama Codex Benchmark">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="gpt-oss:20b benchmark results | Ollama Codex Benchmark">
+  <meta name="twitter:description" content="Benchmark results for gpt-oss:20b with Codex and Ollama, including file-edit, shell, test, and web-search behavior from Mar 24, 2026 at 20:11:24.">
+  <link rel="stylesheet" href="../../assets/dashboard.css">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "gpt-oss:20b benchmark results | Ollama Codex Benchmark",
+  "datePublished": "2026-03-24T20:11:24+00:00",
+  "dateModified": "2026-03-24T20:11:24+00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Pawar Viraj"
+  },
+  "about": [
+    "Ollama",
+    "Codex",
+    "gpt-oss:20b",
+    "benchmark"
+  ],
+  "url": ""
+}</script>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">Benchmark Run</p>
+      <h1>gpt-oss:20b</h1>
+      <p class="subhead">Run captured Mar 24, 2026 at 20:11:24. This page archives the exact benchmark summary and the raw Codex traces used to score the model.</p>
+      <div class="meta-strip">
+        <span class="pill">Overall: <span class="badge badge-FAIL">FAIL</span></span>
+        <span class="pill">Mode: <strong>native-oss</strong></span>
+        <span class="pill">Profile: <strong>local_ollama_auto</strong></span>
+        <span class="pill">Score: <strong>0.50</strong></span>
+      </div>
+      <a class="hero-link" href="../../index.html">Back to dashboard</a>
+    </section>
+
+    <section class="grid detail-grid">
+      <article class="panel">
+        <div class="stat-label">Source Run Directory</div>
+        <div class="kv mono">/tmp/codex-benchmark-gpt-oss-20b-demo</div>
+      </article>
+      <article class="panel">
+        <div class="stat-label">Counts</div>
+        <div class="kv mono">P 2 / Pt 0 / F 2 / T 0</div>
+      </article>
+      <article class="panel">
+        <div class="stat-label">Ground Truth URL</div>
+        <div class="kv"><a href="https://developers.openai.com/codex/noninteractive">https://developers.openai.com/codex/noninteractive</a></div>
+      </article>
+      <article class="panel">
+        <div class="stat-label">Artifacts</div>
+        <div class="kv">
+          <a href="summary.md">summary.md</a><br>
+          <a href="summary.tsv">summary.tsv</a><br>
+          <a href="summary.json">summary.json</a><br>
+          <a href="run.json">run.json</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2>Test Results</h2>
+          <p class="section-copy">Each test row links to the raw JSONL trace captured from Codex for this Ollama model benchmark run.</p>
+        </div>
+      </div>
+      <div class="panel">
+        <table>
+          <thead>
+            <tr>
+              <th>Test</th>
+              <th>Status</th>
+              <th>Details</th>
+              <th>Trace</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+        <tr>
+          <td><code>create_file</code></td>
+          <td><span class="badge badge-FAIL">FAIL</span></td>
+          <td><pre>rc=0; answer=File created. Now answer CREATED.CREATED; command_exec=1</pre></td>
+          <td><a href="traces/create_file.jsonl">trace</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><code>edit_and_test</code></td>
+          <td><span class="badge badge-PASS">PASS</span></td>
+          <td><pre>rc=0; answer=PASS; command_exec=5</pre></td>
+          <td><a href="traces/edit_and_test.jsonl">trace</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><code>shell_http</code></td>
+          <td><span class="badge badge-PASS">PASS</span></td>
+          <td><pre>rc=0; answer=Non-interactive mode – Codex | OpenAI Developers; expected=Non-interactive mode – Codex | OpenAI Developers; command_exec=1; shell_http=yes</pre></td>
+          <td><a href="traces/shell_http.jsonl">trace</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><code>web_search_tool</code></td>
+          <td><span class="badge badge-FAIL">FAIL</span></td>
+          <td><pre>rc=0; answer=Non-Interactive | OpenAI Developers; expected=Non-interactive mode – Codex | OpenAI Developers; dedicated_web_search=no; shell_http=yes</pre></td>
+          <td><a href="traces/web_search_tool.jsonl">trace</a></td>
+        </tr>
+        
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

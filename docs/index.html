@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ollama Codex Benchmark | Public Ollama and Codex benchmark dashboard</title>
+  <meta name="description" content="Public benchmark reports comparing how well local Ollama models work with Codex for file creation, editing, terminal execution, test runs, shell-based web access, and dedicated web-search behavior.">
+  <meta name="keywords" content="ollama codex benchmark, codex ollama benchmark, local llm coding benchmark, gpt-oss benchmark, ollama coding benchmark, codex local development benchmark, ollama codex github pages">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ollama Codex Benchmark | Public Ollama and Codex benchmark dashboard">
+  <meta property="og:description" content="Public benchmark reports comparing how well local Ollama models work with Codex for file creation, editing, terminal execution, test runs, shell-based web access, and dedicated web-search behavior.">
+  <meta property="og:site_name" content="Ollama Codex Benchmark">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ollama Codex Benchmark | Public Ollama and Codex benchmark dashboard">
+  <meta name="twitter:description" content="Public benchmark reports comparing how well local Ollama models work with Codex for file creation, editing, terminal execution, test runs, shell-based web access, and dedicated web-search behavior.">
+  <link rel="stylesheet" href="assets/dashboard.css">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Ollama Codex Benchmark",
+  "description": "Public benchmark reports comparing how well local Ollama models work with Codex for file creation, editing, terminal execution, test runs, shell-based web access, and dedicated web-search behavior.",
+  "url": "",
+  "about": [
+    "Ollama",
+    "Codex",
+    "local LLM coding",
+    "benchmarking"
+  ]
+}</script>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">Public Ollama Codex Benchmark</p>
+      <h1>Automated local-model compatibility reports for Codex and Ollama</h1>
+      <p class="subhead">Public benchmark reports comparing how well local Ollama models work with Codex for file creation, editing, terminal execution, test runs, shell-based web access, and dedicated web-search behavior.</p>
+      <div class="meta-strip">
+        <span class="pill">Runs archived: <strong>2</strong></span>
+        <span class="pill">Models tracked: <strong>1</strong></span>
+        <span class="pill">Average score: <strong>0.62</strong></span>
+        <span class="pill">Best score seen: <strong>0.75</strong></span>
+      </div>
+      
+    </section>
+
+    <section class="grid stats">
+      <article class="panel">
+        <div class="stat-label">Total Runs</div>
+        <div class="stat-value">2</div>
+      </article>
+      <article class="panel">
+        <div class="stat-label">Unique Models</div>
+        <div class="stat-value">1</div>
+      </article>
+      <article class="panel">
+        <div class="stat-label">Latest Model Snapshots</div>
+        <div class="stat-value">1</div>
+      </article>
+      <article class="panel">
+        <div class="stat-label">Average Compatibility Score</div>
+        <div class="stat-value">0.62</div>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="grid info-grid">
+        <article class="panel">
+          <h2>What This Measures</h2>
+          <p class="lede">This benchmark tracks how well local Ollama models cooperate with Codex for practical development work, not just chat quality.</p>
+          <ul class="list">
+            <li>File creation and file editing</li>
+            <li>Terminal command execution and test runs</li>
+            <li>Shell-based HTTP access for web-assisted tasks</li>
+            <li>Dedicated Codex web-search behavior when requested</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h2>How To Reproduce</h2>
+          <p class="lede">Each run page preserves the raw JSONL traces and summary artifacts so other developers can audit the exact behavior of the model.</p>
+          <ul class="list">
+            <li>Run <code>./codex-local-benchmark.sh --mode native-oss --model &lt;model&gt;</code></li>
+            <li>Commit the generated <code>docs/</code> folder to GitHub</li>
+            <li>Enable GitHub Pages for the <code>/docs</code> folder on your default branch</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h2>Ownership</h2>
+          <p class="lede">Maintained by Pawar Viraj. The site is generated automatically after every benchmark run and is designed to publish cleanly on GitHub Pages.</p>
+          <p class="kv">Search engines can index strong titles, descriptions, structured data, a sitemap, and stable run pages, but no implementation can guarantee a top result.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2>Latest by Model</h2>
+          <p class="section-copy">The newest benchmark result for each Ollama model you have tested with Codex.</p>
+        </div>
+      </div>
+      <div class="panel">
+        <table>
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Overall</th>
+              <th>Last Run</th>
+              <th>Mode</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+        <tr>
+          <td><a href="runs/20260324-202749-native-oss-gpt-oss-20b/index.html">gpt-oss:20b</a></td>
+          <td><span class="badge badge-FAIL">FAIL</span></td>
+          <td class="mono">Mar 24, 2026 at 20:27:49</td>
+          <td class="mono">native-oss</td>
+          <td class="mono">0.75</td>
+        </tr>
+        
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2>All Runs</h2>
+          <p class="section-copy">Each row links to a detail page with test outcomes, artifacts, and raw Codex traces.</p>
+        </div>
+      </div>
+      <div class="panel">
+        <table>
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Overall</th>
+              <th>Timestamp</th>
+              <th>Mode</th>
+              <th>Profile</th>
+              <th>Score</th>
+              <th>Counts</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+        <tr>
+          <td><a href="runs/20260324-202749-native-oss-gpt-oss-20b/index.html">gpt-oss:20b</a></td>
+          <td><span class="badge badge-FAIL">FAIL</span></td>
+          <td class="mono">Mar 24, 2026 at 20:27:49</td>
+          <td class="mono">native-oss</td>
+          <td class="mono">local_ollama_auto</td>
+          <td class="mono">0.75</td>
+          <td class="mono">P 3 / Pt 0 / F 0 / T 1</td>
+        </tr>
+        
+
+        <tr>
+          <td><a href="runs/20260324-201124-native-oss-gpt-oss-20b/index.html">gpt-oss:20b</a></td>
+          <td><span class="badge badge-FAIL">FAIL</span></td>
+          <td class="mono">Mar 24, 2026 at 20:11:24</td>
+          <td class="mono">native-oss</td>
+          <td class="mono">local_ollama_auto</td>
+          <td class="mono">0.50</td>
+          <td class="mono">P 2 / Pt 0 / F 2 / T 0</td>
+        </tr>
+        
+          </tbody>
+        </table>
+      </div>
+      <p class="footer-note">Scores are computed as PASS = 1.0, PARTIAL = 0.5, FAIL/TIMEOUT = 0.0 across the benchmark tests. This makes the dashboard useful for tracking Codex and Ollama benchmark compatibility over time.</p>
+    </section>
+  </main>
+</body>
+</html>
