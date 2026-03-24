@@ -2,10 +2,10 @@
   "site_name": "Ollama Codex Benchmark",
   "site_tagline": "Automated local-model compatibility reports for Codex and Ollama",
   "site_description": "Public benchmark reports comparing how well local Ollama models work with Codex for file creation, editing, terminal execution, test runs, shell-based web access, and dedicated web-search behavior.",
-  "site_url": "https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY_NAME",
-  "repo_url": "https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME",
+  "site_url": "https://pawarviraj.github.io/codex-ollama-benchmark-dashboard",
+  "repo_url": "https://github.com/pawarviraj/codex-ollama-benchmark-dashboard",
   "owner_name": "Pawar Viraj",
-  "owner_github": "YOUR_GITHUB_USERNAME",
+  "owner_github": "pawarviraj",
   "keywords": [
     "ollama codex benchmark",
     "codex ollama benchmark",
